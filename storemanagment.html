@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add a Book — Haske Books</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manjari:wght@400;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="topline"></div>
+  <header class="shell admin-header">
+    <nav>
+      <a class="logo" href="index.html">HASKE BOOKS<span>.</span></a>
+      <span class="admin-label">STORE MANAGEMENT</span>
+      <a class="back-link" href="index.html">← View storefront</a>
+    </nav>
+  </header>
+
+  <main class="admin-page shell">
+    <div class="admin-intro">
+      <div class="eyebrow">Catalogue / new title</div>
+      <h1>Add a new book</h1>
+      <p>Fill in the details below to prepare a new book for the Haske Books store.</p>
+    </div>
+
+    <form class="book-form" id="book-form" enctype="multipart/form-data">
+      <section class="form-section upload-section">
+        <div class="form-section-heading">
+          <span class="step">01</span>
+          <div><h2>Book cover</h2><p>Upload a clear, front-facing JPEG image.</p></div>
+        </div>
+        <label class="upload-zone" for="book-image">
+          <input id="book-image" name="book-image" type="file" accept="image/jpeg,.jpg,.jpeg" required>
+          <span class="upload-icon">↑</span>
+          <strong>Drop your JPEG here</strong>
+          <small>or click to browse · JPEG only · max 5 MB</small>
+          <img id="cover-preview" alt="Selected book cover preview" hidden>
+        </label>
+        <p class="upload-message" id="upload-message" aria-live="polite"></p>
+      </section>
+
+      <section class="form-section">
+        <div class="form-section-heading">
+          <span class="step">02</span>
+          <div><h2>Book details</h2><p>These details will be shown on the book's store listing.</p></div>
+        </div>
+        <div class="form-fields">
+          <label class="field full"><span>Name of book</span><input name="book-name" type="text" placeholder="e.g. The Little Things We Keep" required></label>
+          <label class="field full"><span>Author</span><input name="author" type="text" placeholder="e.g. Anjali Menon" required></label>
+          <label class="field full"><span>Book description</span><textarea name="description" rows="6" placeholder="Tell readers about this book, its story, and why they will love it." required></textarea></label>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <div class="form-section-heading">
+          <span class="step">03</span>
+          <div><h2>Pricing & inventory</h2><p>Set the purchase price, discount and available quantity.</p></div>
+        </div>
+        <div class="form-fields pricing-fields">
+          <label class="field"><span>Price <em>(₹)</em></span><input name="price" type="number" min="0" step="1" placeholder="399" required></label>
+          <label class="field"><span>Discount <em>(%)</em></span><input name="discount" type="number" min="0" max="100" step="1" value="0" required></label>
+          <label class="field"><span>Stock</span><input name="stock" type="number" min="0" step="1" placeholder="25" required></label>
+        </div>
+      </section>
+
+      <div class="form-actions">
+        <p>All fields are required. You can edit the book later from the catalogue.</p>
+        <button class="button" type="submit">Add book to store <span class="arrow">→</span></button>
+      </div>
+    </form>
+  </main>
+
+  <div class="toast" id="form-toast" role="status" aria-live="polite">Book details saved successfully.</div>
+</body>
+</html>
