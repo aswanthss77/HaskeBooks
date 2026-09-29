@@ -4,6 +4,24 @@ document.querySelectorAll('.book-card').forEach((book) => {
   });
 });
 
+const menuToggle = document.querySelector('.menu-toggle');
+const primaryNav = document.querySelector('#primary-nav');
+
+if (menuToggle && primaryNav) {
+  const setMenuOpen = (isOpen) => {
+    primaryNav.classList.toggle('is-open', isOpen);
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+    menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+    menuToggle.textContent = isOpen ? '×' : '☰';
+  };
+
+  menuToggle.addEventListener('click', () => setMenuOpen(!primaryNav.classList.contains('is-open')));
+  primaryNav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => setMenuOpen(false)));
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') setMenuOpen(false);
+  });
+}
+
 const uploadInput = document.querySelector('#book-image');
 const uploadZone = document.querySelector('.upload-zone');
 const preview = document.querySelector('#cover-preview');
