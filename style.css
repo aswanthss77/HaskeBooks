@@ -74,7 +74,7 @@ h1 { max-width:660px; margin:23px 0 25px; font-size:clamp(37px,4.3vw,62px); line
 h2 { margin:12px 0 0; font:600 clamp(32px,3.4vw,47px)/1.05 'Playfair Display',serif; letter-spacing:-1px; }
 .view-all { border-bottom:1px solid var(--ink); padding-bottom:4px; font-size:14px; }
 .books-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; }
-.book-card { cursor:pointer; }
+.book-card { display:block; cursor:pointer; }
 .cover { height:322px; padding:22px; display:flex; flex-direction:column; justify-content:space-between; position:relative; box-shadow:9px 10px 0 rgba(24,56,47,.1); transition:.25s transform; }
 .book-card:hover .cover,.book-card.is-selected .cover { transform:translateY(-8px) rotate(-1deg); }
 .cover small { font:10px 'DM Mono',monospace; letter-spacing:1.2px; }
