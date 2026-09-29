@@ -1,8 +1,5 @@
 document.querySelectorAll('.book-card').forEach((book) => {
   book.addEventListener('click', () => {
-    const bag = document.querySelector('.bag');
-    const currentTotal = Number(bag.textContent) || 0;
-    bag.textContent = String(currentTotal + 1).padStart(2, '0');
     book.classList.add('is-selected');
   });
 });
