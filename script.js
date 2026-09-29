@@ -22,6 +22,17 @@ if (menuToggle && primaryNav) {
   });
 }
 
+const productGallery = document.querySelector('.product-gallery');
+
+if (productGallery) {
+  document.querySelectorAll('.gallery-arrow').forEach((arrow) => {
+    arrow.addEventListener('click', () => {
+      const direction = Number(arrow.dataset.galleryDirection);
+      productGallery.scrollBy({ left: direction * productGallery.clientWidth * 0.85, behavior: 'smooth' });
+    });
+  });
+}
+
 const uploadInput = document.querySelector('#book-image');
 const uploadZone = document.querySelector('.upload-zone');
 const preview = document.querySelector('#cover-preview');
