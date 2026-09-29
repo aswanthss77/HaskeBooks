@@ -34,8 +34,12 @@ h1 { max-width:660px; margin:23px 0 25px; font-size:clamp(37px,4.3vw,62px); line
 .front-book i { width:70px; height:2px; background:var(--orange); margin-top:22px; }
 .stamp { position:absolute; width:87px; height:87px; right:-22px; bottom:13px; border-radius:50%; background:var(--orange); color:white; display:grid; place-content:center; text-align:center; font:10px/1.35 'DM Mono',monospace; transform:rotate(-12deg); }
 .stamp b { font-size:22px; }
-.marquee { border-top:1px solid var(--line); border-bottom:1px solid var(--line); overflow:hidden; white-space:nowrap; padding:15px 0 11px; font:500 13px 'DM Mono',monospace; color:#466258; letter-spacing:1px; }
-.marquee span { margin:0 25px; color:var(--orange); font-size:18px; vertical-align:-1px; }
+.marquee { border-top:1px solid var(--line); border-bottom:1px solid var(--line); overflow:hidden; padding:15px 0 11px; font:500 13px 'DM Mono',monospace; color:#466258; letter-spacing:1px; }
+.marquee-track { display:flex; width:max-content; animation:marquee-scroll 24s linear infinite; will-change:transform; }
+.marquee-content { display:block; flex:none; white-space:nowrap; padding-right:50px; }
+.marquee .separator { margin:0 25px; color:var(--orange); font-size:18px; vertical-align:-1px; }
+@keyframes marquee-scroll { to { transform:translateX(-50%); } }
+@media (prefers-reduced-motion:reduce) { .marquee-track { animation:none; } }
 .books { padding:100px 0 110px; background:var(--cream); }
 .section-head { display:flex; align-items:flex-end; justify-content:space-between; margin-bottom:44px; }
 h2 { margin:12px 0 0; font:600 clamp(32px,3.4vw,47px)/1.05 'Playfair Display',serif; letter-spacing:-1px; }
