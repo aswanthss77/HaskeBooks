@@ -1,30 +1,160 @@
 <!doctype html>
 <html lang="ml">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Haske Books — കഥകൾക്ക് ഒരു വീട്</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manjari:wght@400;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <div class="topline"></div>
-  <header class="shell"><nav><a class="logo" href="#home">HASKE BOOKS<span>.</span></a><div class="navlinks" id="primary-nav"><a class="active" href="#shop">Shop</a><a href="editorial.html">Editorial Board</a><a href="#contact">Contact</a></div><button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="primary-nav" aria-expanded="false">☰</button></nav></header>
-  <main id="home">
-    <section class="hero shell"><div class="hero-copy"><div class="eyebrow">Independent Malayalam publishing house</div><h1>എഴുതാൻ നിങ്ങൾക്ക് ധൈര്യമുണ്ടെങ്കിൽ വായനക്കാരിലേക്ക് അത് എത്തിക്കാൻ ഞങ്ങളുണ്ടാവും</h1><p>പുതിയ ശബ്ദങ്ങൾക്കും ഹൃദയത്തിൽ തൊടുന്ന കഥകൾക്കും തുറന്ന ഒരു ഇടം. ഓരോ പുസ്തകത്തിനുമുണ്ട് പറയാൻ ഒരു ലോകം.</p><a href="#shop" class="button">പുസ്തകങ്ങൾ കാണൂ <span class="arrow">→</span></a></div><div class="hero-art" aria-label="A stack of books"><div class="book-stack"><div class="back-book"></div><div class="front-book"><small>HASKE EDITIONS / 2024</small><strong>Stories<br>that stay.</strong><em>വായനയുടെ വീട്</em><i></i></div><div class="stamp"><b>✦</b>READ<br>BRAVELY</div></div></div></section>
-    <div class="marquee" aria-label="Words that matter · കഥകൾക്ക് ഒരു വീട് · Books for curious minds"><div class="marquee-track"><div class="marquee-content">WORDS THAT MATTER <span class="separator">✦</span> കഥകൾക്ക് ഒരു വീട് <span class="separator">✦</span> BOOKS FOR CURIOUS MINDS <span class="separator">✦</span></div><div class="marquee-content" aria-hidden="true">WORDS THAT MATTER <span class="separator">✦</span> കഥകൾക്ക് ഒരു വീട് <span class="separator">✦</span> BOOKS FOR CURIOUS MINDS <span class="separator">✦</span></div></div></div>
-    <section class="books" id="shop"><div class="shell"><div class="section-head"><div><div class="eyebrow">Fresh from the press</div><h2>പുതിയ പുസ്തകങ്ങൾ</h2></div><a class="view-all" href="#shop">എല്ലാം കാണൂ →</a></div><div class="books-grid">
-      <a class="book-card" href="njnUdham.html"><div class="cover one"><small>കവിതാസമാഹാരം</small><div class="cover-title">ഞാൻ യുദ്ധം കണ്ടിട്ടില്ല</div><small>T AMIYA</small></div><div class="book-meta"><div><h3>ഞാൻ യുദ്ധം കണ്ടിട്ടില്ല</h3><p>T Amiya</p></div><div class="price"><del>₹ 140</del> ₹ 100</div></div></a>
-      <!-- Future book cards
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haske Books — കഥകൾക്ക് ഒരു വീട്</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manjari:wght@400;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="topline"></div>
+    <header class="shell">
+      <nav>
+        <a class="logo" href="#home">HASKE BOOKS<span>.</span></a>
+        <div class="navlinks" id="primary-nav">
+          <a class="active" href="#shop">Shop</a
+          ><a href="editorial.html">Editorial Board</a
+          ><a href="#contact">Contact</a>
+        </div>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+      </nav>
+    </header>
+    <main id="home">
+      <section class="hero shell">
+        <div class="hero-copy">
+          <div class="eyebrow">Independent Malayalam publishing house</div>
+          <h1>
+            എഴുതാൻ നിങ്ങൾക്ക് ധൈര്യമുണ്ടെങ്കിൽ വായനക്കാരിലേക്ക് അത് എത്തിക്കാൻ
+            ഞങ്ങളുണ്ടാവും
+          </h1>
+          <p>
+            പുതിയ ശബ്ദങ്ങൾക്കും ഹൃദയത്തിൽ തൊടുന്ന കഥകൾക്കും തുറന്ന ഒരു ഇടം. ഓരോ
+            പുസ്തകത്തിനുമുണ്ട് പറയാൻ ഒരു ലോകം.
+          </p>
+          <a href="#shop" class="button"
+            >പുസ്തകങ്ങൾ കാണൂ <span class="arrow">→</span></a
+          >
+        </div>
+        <div class="hero-art" aria-label="A stack of books">
+          <div class="book-stack">
+            <div class="back-book"></div>
+            <div class="front-book">
+              <small>HASKE EDITIONS / 2024</small
+              ><strong>Stories<br />that stay.</strong><em>വായനയുടെ വീട്</em
+              ><i></i>
+            </div>
+            <div class="stamp"><b>✦</b>READ<br />BRAVELY</div>
+          </div>
+        </div>
+      </section>
+      <div
+        class="marquee"
+        aria-label="Words that matter · കഥകൾക്ക് ഒരു വീട് · Books for curious minds"
+      >
+        <div class="marquee-track">
+          <div class="marquee-content">
+            WORDS THAT MATTER <span class="separator">✦</span> കഥകൾക്ക് ഒരു വീട്
+            <span class="separator">✦</span> BOOKS FOR CURIOUS MINDS
+            <span class="separator">✦</span>
+          </div>
+          <div class="marquee-content" aria-hidden="true">
+            WORDS THAT MATTER <span class="separator">✦</span> കഥകൾക്ക് ഒരു വീട്
+            <span class="separator">✦</span> BOOKS FOR CURIOUS MINDS
+            <span class="separator">✦</span>
+          </div>
+        </div>
+      </div>
+      <section class="books" id="shop">
+        <div class="shell">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow">Fresh from the press</div>
+              <h2>പുതിയ പുസ്തകങ്ങൾ</h2>
+            </div>
+            <a class="view-all" href="#shop">എല്ലാം കാണൂ →</a>
+          </div>
+          <div class="books-grid">
+            <a class="book-card" href="njnUdham.html"
+              ><div class="cover one">
+                <small>കവിതാസമാഹാരം</small>
+                <div class="cover-title">ഞാൻ യുദ്ധം കണ്ടിട്ടില്ല</div>
+                <small>T AMIYA</small>
+              </div>
+              <div class="book-meta">
+                <div>
+                  <h3>ഞാൻ യുദ്ധം കണ്ടിട്ടില്ല</h3>
+                  <p>T Amiya</p>
+                </div>
+                <div class="price"><del>₹ 140</del> ₹ 100</div>
+              </div></a
+            >
+            <!-- Future book cards
       <article class="book-card"><div class="cover two"><small>ESSAYS / 04</small><div class="cover-title">Notes from the Rain</div><small>R. ANAND</small></div><div class="book-meta"><div><h3>മഴക്കുറിപ്പുകൾ</h3><p>ആർ. ആനന്ദ്</p></div><div class="price">₹ 350</div></div></article>
       <article class="book-card"><div class="cover three"><small>POETRY / 11</small><div class="cover-title">Between<br>Two Seas</div><small>MAYA S.</small></div><div class="book-meta"><div><h3>രണ്ട് കടലുകൾക്കിടയിൽ</h3><p>മായ എസ്.</p></div><div class="price">₹ 299</div></div></article>
       <article class="book-card"><div class="cover four"><small>TRANSLATION / 07</small><div class="cover-title">A Room<br>of Mangoes</div><small>N. VINOD</small></div><div class="book-meta"><div><h3>മാമ്പഴങ്ങളുടെ മുറി</h3><p>എൻ. വിനോദ്</p></div><div class="price">₹ 420</div></div></article>
       -->
-    </div></div></section>
-  </main>
-  <footer id="contact"><div class="shell"><div class="footer-main"><div class="footer-intro"><a class="logo" href="#home">HASKE BOOKS<span>.</span></a><p>ധൈര്യത്തോടെ എഴുതുന്നവർക്കും തുറന്ന മനസ്സോടെ വായിക്കുന്നവർക്കും വേണ്ടിയുള്ള ഒരു സ്വതന്ത്ര പ്രസാധനശാല.</p></div><div class="footer-col" id="board"><h4>EXPLORE</h4><a href="#shop">Shop books</a><a href="editorial.html">Editorial board</a><a href="#home">Submit a manuscript</a></div><div class="footer-col"><h4>GET IN TOUCH</h4><p>hello@haskebooks.in</p><p>+91 94001 05073</p><p>Kulakkada East PO<br>Kottarakara 691521</p></div></div><div class="footer-bottom"><span>© 2024 HASKE BOOKS. ALL RIGHTS RESERVED.</span><span>INSTAGRAM &nbsp; / &nbsp; FACEBOOK &nbsp; / &nbsp; X</span></div></div></footer>
-</body>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="contact">
+      <div class="shell">
+        <div class="footer-main">
+          <div class="footer-intro">
+            <a class="logo" href="#home">HASKE BOOKS<span>.</span></a>
+            <p>
+              ധൈര്യത്തോടെ എഴുതുന്നവർക്കും തുറന്ന മനസ്സോടെ വായിക്കുന്നവർക്കും
+              വേണ്ടിയുള്ള ഒരു സ്വതന്ത്ര പ്രസാധനശാല.
+            </p>
+          </div>
+          <div class="footer-col" id="board">
+            <h4>EXPLORE</h4>
+            <a href="#shop">Shop books</a
+            ><a href="editorial.html">Editorial board</a
+            ><a href="#home">Submit a manuscript</a>
+          </div>
+          <div class="footer-col">
+            <h4>GET IN TOUCH</h4>
+            <p>hello@haskebooks.in</p>
+            <p>+91 94001 05073</p>
+            <p>Kulakkada East PO<br />Kottarakara 691521</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2024 HASKE BOOKS. ALL RIGHTS RESERVED.</span
+          ><span
+            ><a
+              href="https://www.instagram.com/haskebooks?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw=="
+              target="_blank"
+              rel="noopener noreferrer"
+              >INSTAGRAM</a
+            >
+            &nbsp; / &nbsp;
+            <a
+              href="https://www.facebook.com/HASKE.Foundation"
+              target="_blank"
+              rel="noopener noreferrer"
+              >FACEBOOK</a
+            >
+            &nbsp; / &nbsp; X</span
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
