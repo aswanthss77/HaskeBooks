@@ -98,7 +98,7 @@ footer .logo { color:#fff8e9; } footer .logo span { color:var(--gold); }
 .editorial-hero { background:var(--cream); padding:106px 0 98px; position:relative; overflow:hidden; }
 .editorial-hero:after { content:""; position:absolute; width:430px; height:430px; border:1px solid var(--gold); border-radius:50%; right:-115px; top:-165px; }
 .editorial-hero .shell { position:relative; z-index:1; }
-.editorial-hero h1 { margin:22px 0 18px; font:600 clamp(48px,6vw,78px)/1.04 'Playfair Display',serif; }
+.editorial-hero h1 { margin:22px 0 18px; font:700 clamp(48px,6vw,78px)/1.15 Manjari,sans-serif; }
 .editorial-hero p { max-width:450px; margin:0; color:#496258; line-height:1.8; }
 .editorial-list { padding:82px 0 110px; }
 .team-feature { border-top:2px solid var(--ink); border-bottom:1px solid var(--line); padding:27px 0 31px; display:flex; justify-content:space-between; align-items:baseline; }
@@ -122,7 +122,7 @@ footer .logo { color:#fff8e9; } footer .logo span { color:var(--gold); }
 .credits div + div { border-left:1px solid rgba(255,255,255,.2); }
 .credits span { display:block; color:var(--gold); font:11px 'DM Mono',monospace; letter-spacing:1.3px; margin-bottom:13px; }
 .credits strong { font-size:18px; line-height:1.65; }
-@media (max-width:760px) { .editorial-hero { padding:72px 0; } .editorial-list { padding:55px 0 70px; } .team-feature { display:block; } .team-feature h2 { margin-top:15px; } .team-grid,.credits { grid-template-columns:1fr; } .team-card { padding:28px 0; min-height:auto; } .team-card + .team-card { border-left:0; border-top:1px solid var(--line); padding-left:0; } .board-members { padding:60px 0 50px; } .board-heading { display:block; } .board-heading h2 { margin-top:12px; } .board-members li { grid-template-columns:47px 1fr; } .credits div + div { border-left:0; border-top:1px solid rgba(255,255,255,.2); } }
+@media (max-width:760px) { .editorial-hero { padding:72px 0; } .editorial-hero h1 { font-size:clamp(36px, 9vw, 48px); line-height:1.2; } .editorial-list { padding:55px 0 70px; } .team-feature { display:block; } .team-feature h2 { margin-top:15px; } .team-grid,.credits { grid-template-columns:1fr; } .team-card { padding:28px 0; min-height:auto; } .team-card + .team-card { border-left:0; border-top:1px solid var(--line); padding-left:0; } .board-members { padding:60px 0 50px; } .board-heading { display:block; } .board-heading h2 { margin-top:12px; } .board-members li { grid-template-columns:47px 1fr; } .credits div + div { border-left:0; border-top:1px solid rgba(255,255,255,.2); } }
 
 .admin-header nav { gap:28px; }
 .admin-label { color:#587067; font:11px 'DM Mono',monospace; letter-spacing:1.3px; margin-right:auto; }
